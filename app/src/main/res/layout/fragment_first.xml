@@ -35,49 +35,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            >
+            android:layout_marginBottom="10dp">
 
-<!--            <ImageView-->
-<!--                android:id="@+id/button_volume"-->
-<!--                android:layout_width="75dip"-->
-<!--                android:layout_height="75dip"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_alignParentLeft="true"-->
-<!--                android:layout_alignParentBottom="true"-->
-<!--                android:background="@drawable/ic_volume_up_black_24dp"-->
-<!--                android:padding="35dip" />-->
+            <!--            <ImageView-->
+            <!--                android:id="@+id/button_volume"-->
+            <!--                android:layout_width="75dip"-->
+            <!--                android:layout_height="75dip"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:background="@drawable/ic_volume_up_black_24dp"-->
+            <!--                android:padding="35dip" />-->
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
-                >
+                android:orientation="vertical">
+
                 <Button
                     android:id="@+id/button_volume"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_volume_off_sm"
                     android:layout_marginStart="10dp"
-                    android:drawablePadding="-15sp" />
+                    android:foregroundTint="@color/material_on_primary_emphasis_medium"
+                    android:drawableLeft="@drawable/ic_volume_off_sm"
+
+                    />
 
                 <Button
                     android:id="@+id/button_device_volume"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_volume_off_sm"
                     android:layout_marginStart="10dp"
+                    android:drawableLeft="@drawable/ic_volume_off_sm"
                     android:drawablePadding="-15sp" />
 
 
-
             </LinearLayout>
-
 
 
             <ImageButton
@@ -86,12 +85,11 @@
                 android:layout_height="100dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/fire_button"
-                android:background="@android:color/transparent"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                />
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fire_button" />
 
         </RelativeLayout>
 
