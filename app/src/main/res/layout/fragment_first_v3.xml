@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="341dp"
+        android:layout_height="300dp"
+        android:background="#ffffff"
+        android:paddingBottom="150dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/button_volume"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ic_volume_on"
+        android:padding="35dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pager" />
+
+    <ImageView
+        android:id="@+id/button_fire"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:padding="10dip"
+        android:src="@drawable/fire_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pager" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

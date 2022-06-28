@@ -44,7 +44,7 @@
             android:id="@+id/button_volume"
             android:layout_width="75dip"
             android:layout_height="75dip"
-            android:background="@drawable/ic_volume_up_black_24dp"
+            android:background="@drawable/ic_volume_on"
             android:padding="35dip"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment1_v2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/button_volume"
+            android:layout_width="75dip"
+            android:layout_height="75dip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_volume_on"
+            android:padding="35dip" />
+
+        <ImageView
+            android:id="@+id/button_fire"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dip"
+            android:src="@drawable/fire_button" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:paddingBottom="150dip">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textview_first"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/hello_first_fragment"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/button_first"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_first"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/next"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/textview_first" />-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relativeLayout1"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="fill_parent"-->
+    <!--        android:background="#000000"-->
+    <!--        android:orientation="vertical"-->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        >-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="150dip"-->
+    <!--            android:layout_alignParentBottom="true">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/button_volume"-->
+    <!--                android:layout_width="75dip"-->
+    <!--                android:layout_height="75dip"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:layout_alignParentLeft="true"-->
+    <!--                android:layout_alignParentBottom="true"-->
+    <!--                android:background="@drawable/ic_volume_up_black_24dp"-->
+    <!--                android:padding="35dip" />-->
+
+    <!--<View-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/buttonFire"-->
+    <!--android:layout_width="150dip"-->
+    <!--android:layout_height="150dip"-->
+    <!--android:padding="10dip" />-->
+
+    <!--            <ImageButton-->
+    <!--                android:id="@+id/ImageButton01"-->
+    <!--                android:scaleType="fitCenter"-->
+    <!--                android:layout_width="150dip"-->
+    <!--                android:layout_height="150dip"-->
+    <!--                android:layout_alignParentEnd="true"-->
+    <!--                android:layout_alignParentRight="true"-->
+    <!--                android:src="@drawable/fire_button" />-->
+
+
+    <!--            <Button-->
+    <!--                android:id="@+id/button3"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentRight="true"-->
+    <!--                android:layout_alignParentEnd="true"-->
+    <!--                android:text="Button">-->
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/button_fire"-->
+    <!--                    android:layout_width="150dip"-->
+    <!--                    android:layout_height="150dip"-->
+    <!--                    android:padding="10dip"-->
+    <!--                    android:src="@drawable/fire_button" />-->
+    <!--            </Button>-->
+
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--    </RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
