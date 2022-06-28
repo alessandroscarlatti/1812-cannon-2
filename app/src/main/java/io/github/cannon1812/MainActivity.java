@@ -1,4 +1,4 @@
-package com.example.test2;
+package io.github.cannon1812;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +10,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.test2.databinding.ActivityMainBinding;
+import io.github.cannon1812.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

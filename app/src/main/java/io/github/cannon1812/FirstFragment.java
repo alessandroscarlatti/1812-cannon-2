@@ -1,4 +1,4 @@
-package com.example.test2;
+package io.github.cannon1812;
 
 import android.database.ContentObserver;
 import android.os.Bundle;
@@ -9,13 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.test2.databinding.FragmentFirstBinding;
+import io.github.cannon1812.databinding.FragmentFirstBinding;
 
 import java.util.ArrayList;
 

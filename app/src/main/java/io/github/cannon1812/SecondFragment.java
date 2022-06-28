@@ -1,4 +1,4 @@
-package com.example.test2;
+package io.github.cannon1812;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.test2.databinding.FragmentSecondBinding;
+import io.github.cannon1812.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
 

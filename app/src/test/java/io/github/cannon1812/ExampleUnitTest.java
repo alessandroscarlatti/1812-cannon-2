@@ -1,4 +1,4 @@
-package com.example.test2;
+package io.github.cannon1812;
 
 import org.junit.Test;
 

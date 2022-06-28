@@ -1,4 +1,4 @@
-package com.example.test2;
+package io.github.cannon1812;
 
 import android.content.Context;
 import android.view.LayoutInflater;
