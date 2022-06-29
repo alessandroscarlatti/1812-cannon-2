@@ -93,11 +93,22 @@ public class FirstFragment extends Fragment {
     }
 
     private void configureFireCannonButton() {
-        if (cannonService.isVolumeOn()) {
-            btnFire.setImageResource(R.drawable.fire_button_on);
+        if (cannonService.isDeviceMuted()) {
+            // device is not live
+            if (cannonService.isVolumeOn()) {
+                btnFire.setImageResource(R.drawable.fire_button_warn);
+            } else {
+                btnFire.setImageResource(R.drawable.fire_button);
+            }
         } else {
-            btnFire.setImageResource(R.drawable.fire_button);
+            // device is live
+            if (cannonService.isVolumeOn()) {
+                btnFire.setImageResource(R.drawable.fire_button_on);
+            } else {
+                btnFire.setImageResource(R.drawable.fire_button);
+            }
         }
+
     }
 
     @Override
