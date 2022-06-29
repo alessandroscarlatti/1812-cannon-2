@@ -26,10 +26,13 @@ public class FirstFragment extends Fragment {
     private Button btnDeviceVolume;
     private ImageButton btnFire;
     private ViewPager vwScore;
+    private Button btnNextBookmark;
 
     private AudioContentObserver audioContentObserver;
 
     private CannonService cannonService;
+
+    private SlidingImageAdapter2 slidingImageAdapter2;
 
     @Override
     public View onCreateView(
@@ -54,12 +57,15 @@ public class FirstFragment extends Fragment {
 
         btnFire = binding.buttonFire;
         btnVolume = binding.buttonVolume;
-        btnDeviceVolume = (Button) binding.buttonDeviceVolume;
-        vwScore = (ViewPager) binding.pager;
+        btnDeviceVolume = binding.buttonDeviceVolume;
+        vwScore = binding.pager;
+        btnNextBookmark = binding.buttonNextBookmark;
 
         btnVolume.setOnClickListener(new ToggleVolume());
         btnDeviceVolume.setOnClickListener(new ToggleDeviceMute());
         btnFire.setOnTouchListener(new FireCannon());
+        btnNextBookmark.setOnClickListener(new NextBookmark());
+
         configureDeviceVolumeButton();
         configureCannonVolumeButton();
         configureFireCannonButton();
@@ -68,7 +74,9 @@ public class FirstFragment extends Fragment {
         for (int i : Score.Pages) {
             imagesArray.add(i);
         }
-        vwScore.setAdapter(new SlidingImageAdapter(getContext(), imagesArray));
+
+        slidingImageAdapter2 = new SlidingImageAdapter2(getContext(), imagesArray);
+        vwScore.setAdapter(slidingImageAdapter2);
     }
 
     private void configureDeviceVolumeButton() {
@@ -152,6 +160,13 @@ public class FirstFragment extends Fragment {
             }
 
             return true;
+        }
+    }
+
+    private class NextBookmark implements View.OnClickListener {
+        @Override
+        public void onClick(View view) {
+            slidingImageAdapter2.setImage(10);
         }
     }
 
